@@ -1,0 +1,99 @@
+//base styles
+
+.banner{
+  padding-top: 80px;
+  padding-bottom: 100px;
+  background: linear-gradient(to bottom, map-get($colors, third-color)  , transparent 100%),;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+
+  .wrapper{
+    text-align: center;
+    width: 95%;
+    margin: 0 auto;
+    div{
+      margin: 20px 0;
+    }
+    .title{
+        font-size: 2.2rem;
+        font-weight: bold;
+        text-shadow: 0 5px 10px rgba(73, 73, 73, 0.438);
+    }
+    .sub-title{
+        font-size: 0.9rem;
+        color: gray;
+    }
+    .btns{
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      a{
+       padding: 10px 35px;
+       font-size: 1rem;
+       font-weight: 500;
+       text-transform: capitalize;
+       border-radius: 25px;
+        display: block;
+        margin: 10px 20px;
+        box-shadow: 0 5px 10px rgba(58, 58, 58, 0.308);
+      }
+      .first{
+        background: map-get($map: $colors, $key: primary-color);
+        color: white;
+      }
+      .second{
+       color: black;
+       background : white;
+
+      }
+    }
+  }
+}
+
+//media quaries
+// 575px 
+
+//768px
+@media only screen and (min-width: 768px){
+  .banner{
+    .wrapper{
+      max-width: 500px;
+      div{
+        margin: 40px;
+      }
+      .btns{
+        flex-direction: row;
+
+      }
+    }
+    
+  }
+}
+
+//992px
+@media only screen and (min-width: 992px){
+  .banner{
+    .wrapper{
+      max-width: 600px;
+      .title{
+        font-size: 2.5rem;
+
+      }
+    }
+  }
+}
+
+//1200px
+@media only screen and (min-width: 1200px){
+  .banner{
+    .wrapper{
+      max-width: 600px;
+      .title{
+        font-size: 2.8rem;
+
+      }
+    }
+  }
+}

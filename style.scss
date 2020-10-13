@@ -1,0 +1,15 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Roboto', sans-serif;
+}
+$colors:(
+  primary-color: #7579e7,
+   accent-color: #b9fffc,
+   secondary-color: #9ab3f5,
+   third-color: #a3d8f4,
+);
+@import './sass-partials/nav-bar';
+@import './sass-partials/banner';

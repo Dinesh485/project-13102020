@@ -1,0 +1,174 @@
+/*base styles*/
+
+
+
+.nav-bar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  .wrapper{
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    .logo{
+      width: 130px;
+    }
+    a{
+      color: black;
+    }
+    .menu{
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.1rem;
+      background: map-get($map: $colors, $key: primary-color);
+      transform: translateY(-100%);
+      transition: transform 400ms ease-out, opacity 300ms ease;
+      opacity: 0;
+      
+     li{
+       margin: 15px;
+       a{
+         color: white;
+       }
+     }
+    }
+    .menu-drop{
+      transform: translateY(0%);
+      opacity: 1;
+    }
+    .btns{
+      display: flex;
+      align-items: center;
+      .login-btn{
+        padding: 10px 20px;
+       
+        border-radius: 20px;
+        font-size: 0.8rem;
+        background: map-get($map: $colors, $key: primary-color);
+        color: white;
+         box-shadow: 0 10px 15px rgba(44, 44, 44, 0.404);
+        transition: background-color 200ms linear ,color 200ms linear;
+        
+      }
+      .login-btn:hover{
+        background: map-get($map: $colors, $key: secondary-color);
+       color: black;
+      }
+      .menu-btn{
+        margin: 20px;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        span{
+          display: block;
+          width: 90%;
+          margin: 2px;
+          border: 1px solid;
+          border-radius: 3px;
+          transition: transform 200ms ease-in, opacity 200ms linear;
+        
+        }
+        .menu-btn-color{
+          border-color: white;
+        }
+        .first{
+          transform-origin: left center;
+
+        }
+        .third{
+          transform-origin: left center;
+        }
+        .first-rotate{
+          transform: rotate(45deg);
+        }
+        
+        .second-rotate{
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        .third-rotate{
+          transform: rotate(-45deg);
+        }
+        
+      }
+    }
+  }
+}
+
+
+/*media queries*/
+
+/*576px */
+@media only screen and (min-width: 576px){
+ .nav-bar{
+   .wrapper{
+     width: 90%;
+     padding: 10px 0;
+     .menu{
+       flex-direction: row;
+       position: static;
+       transform: translate(0);
+       opacity: 1;
+       width: fit-content;
+       height: fit-content;
+       font-size: 0.8rem;
+       font-weight: normal;
+       background: none;
+       
+       li{
+         margin: 0 10px;
+         a{
+           color: black;
+         }
+       }
+     }
+     .btns{
+       .menu-btn{
+         display: none;
+       }
+     }
+   }
+ }
+}
+/*768px */
+@media only screen and (min-width: 768px){
+  .nav-bar{
+    .wrapper{
+      width: 80%;
+      .logo{
+        width: 160px;;
+      }
+    }
+  }
+}
+/*992px */
+@media only screen and (min-width: 992px){
+
+}
+
+/*1200px */
+@media only screen and (min-width: 1200px){
+  
+}
