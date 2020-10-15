@@ -512,4 +512,140 @@
     font-size: 2rem;
   }
 }
+
+.application-process {
+  padding-bottom: 100px;
+}
+
+.application-process .wrapper {
+  width: 90%;
+  max-width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.application-process .wrapper .section-title {
+  text-transform: uppercase;
+  color: #7579e7;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.application-process .wrapper .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.application-process .wrapper .cards .card {
+  width: 250px;
+  height: 310px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 5px 5px 20px rgba(82, 82, 82, 0.562);
+          box-shadow: 5px 5px 20px rgba(82, 82, 82, 0.562);
+  margin: 20px;
+  border-radius: 10px;
+  padding: 50px 10px 20px;
+}
+
+.application-process .wrapper .cards .card .icon {
+  background: black;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.application-process .wrapper .cards .card .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.application-process .wrapper .cards .card .description {
+  font-size: 0.9rem;
+  color: gray;
+  margin-top: 20px;
+}
+
+.application-process .wrapper .cards .card:nth-child(1) .icon {
+  background: blue;
+  -webkit-box-shadow: 0 3px 10px  gray;
+          box-shadow: 0 3px 10px  gray;
+}
+
+.application-process .wrapper .cards .card:nth-child(2) .icon {
+  background: purple;
+  -webkit-box-shadow: 0 3px 10px gray;
+          box-shadow: 0 3px 10px gray;
+}
+
+.application-process .wrapper .cards .card:nth-child(3) .icon {
+  background: green;
+  -webkit-box-shadow: 0 3px 10px gray;
+          box-shadow: 0 3px 10px gray;
+  padding: 20px 24px;
+}
+
+.application-process .wrapper .cards .card:nth-child(4) .icon {
+  background: red;
+  -webkit-box-shadow: 0 3px 10px gray;
+          box-shadow: 0 3px 10px gray;
+  padding: 20px 22px;
+}
+
+.application-process .wrapper .find-out-more {
+  padding: 10px 30px;
+  font-weight: normal;
+  border-radius: 5px;
+  background: #7579e7;
+  color: white;
+  margin-top: 30px;
+  -webkit-box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.63);
+          box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.63);
+}
+
+@media only screen and (min-width: 992px) {
+  .application-process .wrapper .section-title {
+    margin-bottom: 40px;
+  }
+  .application-process .wrapper .cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .application-process .wrapper .cards .card {
+    margin: 0 10px;
+  }
+  .application-process .wrapper .find-out-more {
+    margin-top: 50px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

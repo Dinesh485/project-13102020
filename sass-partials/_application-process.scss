@@ -1,0 +1,120 @@
+
+//base styles
+.application-process{
+  padding-bottom: 100px; 
+  .wrapper{
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .section-title{
+      text-transform: uppercase;
+      color: map-get($map: $colors, $key: primary-color);
+      font-size: 1rem;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    .cards{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      position: relative;
+    
+      
+      .card{
+        width: 250px;
+        height: 310px;
+        box-sizing: border-box;
+        box-shadow: 5px 5px 20px rgba(82, 82, 82, 0.562);
+        margin: 20px;
+        border-radius: 10px;
+        padding: 50px 10px 20px;
+        .icon{
+          background: black;
+          color: white;
+          font-size: 20px;
+          padding: 20px;
+          border-radius: 50%;;
+          margin-bottom: 20px;
+          
+        }
+        .card-title{
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+        .description{
+          font-size: 0.9rem;
+          color: gray;
+          margin-top: 20px;
+        }
+      }
+      .card:nth-child(1){
+        .icon{
+            background: blue;
+          box-shadow: 0 3px 10px  gray;
+        }
+      }
+      .card:nth-child(2){
+        .icon{
+         background: purple;
+          box-shadow: 0 3px 10px gray;
+        }
+      }
+      .card:nth-child(3){
+        .icon{
+          background: green;
+          box-shadow: 0 3px 10px gray;
+          padding: 20px 24px;
+        }
+      }
+      .card:nth-child(4){
+        .icon{
+         background: red;
+          box-shadow: 0 3px 10px gray;
+           padding: 20px 22px;
+        }
+      }
+      
+    }
+    .find-out-more{
+      padding: 10px 30px;
+      font-weight: normal;
+      border-radius:5px;
+      background: map-get($map: $colors, $key: primary-color);
+      color: white;
+      margin-top: 30px;
+      box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.63);
+    }
+  }
+}
+
+//567px
+
+//768px
+
+//992px 
+@media only screen and (min-width: 992px){
+  .application-process{
+    .wrapper{
+      .section-title{
+        margin-bottom: 40px;
+      }
+      .cards{
+         flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+        .card{
+          margin: 0 10px;
+        }
+      }
+      .find-out-more{
+        margin-top: 50px;
+      }
+    }
+  }
+}
+//1200px
