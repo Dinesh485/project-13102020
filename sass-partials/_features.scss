@@ -1,0 +1,134 @@
+//base styles
+.features {
+  padding-bottom: 100px;
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    .title {
+      text-transform: uppercase;
+      color: map-get($map: $colors, $key: primary-color);
+      font-weight: bold;
+    }
+    .subtitle {
+      font-size: 1.3rem;
+      text-transform: capitalize;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+
+    .cards {
+      margin: 20px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .card {
+        margin: 40px 0;
+        max-width: 400px;
+        .icon {
+          font-size: 20px;
+
+          color: white;
+          padding: 20px;
+          border-radius: 50%;
+        }
+        .card-title {
+          margin: 20px 0;
+          text-transform: capitalize;
+          font-size: 1.4rem;
+          font-weight: bold;
+        }
+        .card-description {
+          font-size: 0.9rem;
+          color: gray;
+          width: 80%;
+          margin: 0 auto;
+        }
+      }
+      .card:nth-child(1) {
+        .icon {
+          background: linear-gradient( to top right, blue, skyblue );
+          box-shadow: 0 3px 5px gray;
+        }
+      }
+      .card:nth-child(2) {
+        .icon {
+          background: linear-gradient( to top right, green, rgb(130, 233, 130) );
+          box-shadow: 0 3px 5px gray;
+        }
+      }
+      .card:nth-child(3) {
+        .icon {
+          background: linear-gradient( to top right, red, rgb(231, 123, 123) );
+          box-shadow: 0 3px 5px gray;
+        }
+      }
+      .card:nth-child(4) {
+        .icon {
+          background: linear-gradient( to top right, purple, rgb(221, 125, 221) );
+          box-shadow: 0 3px 5px gray;
+        }
+      }
+      .card:nth-child(5) {
+        .icon {
+         background: linear-gradient( to top right,rgb(248, 19, 19),rgb(223, 127, 127) );
+          box-shadow: 0 3px 5px gray;
+        }
+      }
+      .card:nth-child(6) {
+        .icon {
+         background: linear-gradient( to top right, rgb(0, 110, 255), rgb(128, 170, 224) );
+          box-shadow: 0 3px 5px gray;
+        }
+      }
+    }
+  }
+}
+//576px
+@media only screen and (min-width: 576px){
+  .features{
+    .wrapper{
+      .subtitle{
+        font-size: 1.7rem;
+      }
+    }
+  }
+}
+//768px
+ @media only screen and (min-width: 768px){
+   .features{
+     .wrapper{
+       .cards{
+         flex-direction: row;
+         flex-wrap: wrap;
+         .card{
+           margin: 40px 20px;
+           max-width: 250px;
+         }
+       }
+     }
+   }
+ }
+//992px
+@media only screen and (min-width: 992px){
+  .features{
+    .wrapper{
+      .cards{
+        max-width: 1100px;
+        margin: 30px auto;
+      }
+    }
+  }
+}
+//1200px
+@media only screen and (min-width: 1200px){
+  .features{
+    .wrapper{
+      .subtitle{
+        font-size: 2rem;
+      }
+    }
+  }
+}
