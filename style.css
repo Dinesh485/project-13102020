@@ -417,9 +417,9 @@
 }
 
 .features .wrapper .cards .card .icon {
-  font-size: 20px;
+  font-size: 25px;
   color: white;
-  padding: 20px;
+  padding: 25px;
   border-radius: 50%;
 }
 
@@ -440,43 +440,43 @@
 .features .wrapper .cards .card:nth-child(1) .icon {
   background: -webkit-gradient(linear, left bottom, right top, from(blue), to(skyblue));
   background: linear-gradient(to top right, blue, skyblue);
-  -webkit-box-shadow: 0 3px 5px gray;
-          box-shadow: 0 3px 5px gray;
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 255, 0.548);
+          box-shadow: 0 3px 10px rgba(0, 0, 255, 0.548);
 }
 
 .features .wrapper .cards .card:nth-child(2) .icon {
   background: -webkit-gradient(linear, left bottom, right top, from(green), to(#82e982));
   background: linear-gradient(to top right, green, #82e982);
-  -webkit-box-shadow: 0 3px 5px gray;
-          box-shadow: 0 3px 5px gray;
+  -webkit-box-shadow: 0 3px 10px rgba(0, 128, 0, 0.514);
+          box-shadow: 0 3px 10px rgba(0, 128, 0, 0.514);
 }
 
 .features .wrapper .cards .card:nth-child(3) .icon {
   background: -webkit-gradient(linear, left bottom, right top, from(red), to(#e77b7b));
   background: linear-gradient(to top right, red, #e77b7b);
-  -webkit-box-shadow: 0 3px 5px gray;
-          box-shadow: 0 3px 5px gray;
+  -webkit-box-shadow: 0 3px 10px rgba(255, 0, 0, 0.548);
+          box-shadow: 0 3px 10px rgba(255, 0, 0, 0.548);
 }
 
 .features .wrapper .cards .card:nth-child(4) .icon {
   background: -webkit-gradient(linear, left bottom, right top, from(purple), to(#dd7ddd));
   background: linear-gradient(to top right, purple, #dd7ddd);
-  -webkit-box-shadow: 0 3px 5px gray;
-          box-shadow: 0 3px 5px gray;
+  -webkit-box-shadow: 0 3px 10px rgba(128, 0, 128, 0.514);
+          box-shadow: 0 3px 10px rgba(128, 0, 128, 0.514);
 }
 
 .features .wrapper .cards .card:nth-child(5) .icon {
   background: -webkit-gradient(linear, left bottom, right top, from(#f81313), to(#df7f7f));
   background: linear-gradient(to top right, #f81313, #df7f7f);
-  -webkit-box-shadow: 0 3px 5px gray;
-          box-shadow: 0 3px 5px gray;
+  -webkit-box-shadow: 0 3px 10px rgba(248, 19, 19, 0.527);
+          box-shadow: 0 3px 10px rgba(248, 19, 19, 0.527);
 }
 
 .features .wrapper .cards .card:nth-child(6) .icon {
   background: -webkit-gradient(linear, left bottom, right top, from(#006eff), to(#80aae0));
   background: linear-gradient(to top right, #006eff, #80aae0);
-  -webkit-box-shadow: 0 3px 5px gray;
-          box-shadow: 0 3px 5px gray;
+  -webkit-box-shadow: 0 3px 10px rgba(0, 110, 255, 0.562);
+          box-shadow: 0 3px 10px rgba(0, 110, 255, 0.562);
 }
 
 @media only screen and (min-width: 576px) {
