@@ -19,6 +19,7 @@
           backdrop-filter: blur(4px) hue-rotate(120deg);
   -webkit-box-shadow: 0 5px 10px rgba(83, 83, 83, 0.301);
           box-shadow: 0 5px 10px rgba(83, 83, 83, 0.301);
+  z-index: 100;
 }
 
 .nav-bar .wrapper {
@@ -646,6 +647,105 @@
   }
   .application-process .wrapper .find-out-more {
     margin-top: 50px;
+  }
+}
+
+.testemonial {
+  padding-bottom: 50px;
+}
+
+.testemonial .slider {
+  width: 84%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testemonial .slider .slide {
+  padding: 20px;
+}
+
+.testemonial .slider .slide .card {
+  width: 100%;
+  max-width: 550px;
+  height: 300px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 0 10px gray;
+          box-shadow: 0 0 10px gray;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 30px 20px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.testemonial .slider .slide .card .client {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testemonial .slider .slide .card .client .client-img {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.testemonial .slider .slide .card .client .client-img img {
+  width: 100%;
+}
+
+.testemonial .slider .slide .card .client .client-details {
+  margin-left: 20px;
+}
+
+.testemonial .slider .slide .card .client .client-details .name {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.testemonial .slider .slide .card .client .client-details .profession {
+  color: gray;
+  font-size: 0.9rem;
+}
+
+.testemonial .slider .slide .card .review {
+  font-size: 0.9rem;
+  color: gray;
+  margin-top: 30px;
+  line-height: 1.7;
+}
+
+.testemonial .slider .slide .card .bubble-one {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: red;
+  opacity: 0.3;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+.testemonial .slider .slide .card .bubble-two {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: green;
+  opacity: 0.3;
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .testemonial .slider .slide .card {
+    height: 250px;
+    padding-left: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */

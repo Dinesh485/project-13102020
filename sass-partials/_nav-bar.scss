@@ -11,6 +11,7 @@
   background: linear-gradient(to top, transparent, rgba(190, 190, 190, 0.253));
   backdrop-filter: blur(4px) hue-rotate(120deg);
   box-shadow: 0 5px 10px rgba(83, 83, 83, 0.301);
+  z-index: 100;
   .wrapper{
     
     max-width: 1200px;
@@ -43,7 +44,7 @@
       transform: translateY(-100%);
       transition: transform 400ms ease-out, opacity 300ms ease;
       opacity: 0;
-      
+   
      li{
        margin: 15px;
        a{
